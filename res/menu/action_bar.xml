@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:ARC="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/item"
+        android:title="Item"
+		android:icon="@drawable/ic_launcher"
+		ARC:showAsAction="always">
+	
+		<item
+			android:id="@+id/test1"
+			android:title="test1">
+		</item>
+	</item>
+    
+</menu>
