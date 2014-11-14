@@ -2,7 +2,9 @@ package jan.hanson.ARC;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.*;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity 
 {
@@ -22,6 +24,16 @@ public class MainActivity extends ActionBarActivity
 		inflater.inflate(R.menu.action_bar, menu);
 		return super.onCreateOptionsMenu(menu);
 	}
+
+//BROKEN
+//	@Override
+//	public final boolean onMenuItemSelected(int featureId, MenuItem item)
+//	{
+//		// TODO: Implement this method
+//		return super.onMenuItemSelected(featureId, item);
+//	}
+	
+
 }
 
 
