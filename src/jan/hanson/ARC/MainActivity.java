@@ -1,11 +1,9 @@
 package jan.hanson.ARC;
 
-import android.app.*;
-import android.os.*;
-import android.view.*;
-import android.widget.*;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 
-public class MainActivity extends Activity
+public class MainActivity extends ActionBarActivity
 {
     /** Called when the activity is first created. */
     @Override
@@ -15,3 +13,6 @@ public class MainActivity extends Activity
         setContentView(R.layout.main);
     }
 }
+
+
+
