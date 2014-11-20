@@ -1,15 +1,49 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
 	  xmlns:ARC="http://schemas.android.com/apk/res-auto">
     
+	<item
+		android:id="@+id/action_button1"
+		android:title="actionItem1"
+		ARC:showAsAction="ifRoom">
+	</item>  
+	
+	<item
+		android:id="@+id/action_button2"
+		android:title="actionItem2"
+		ARC:showAsAction="ifRoom">
+	</item>
+	
+	<item
+		android:id="@+id/action_button3"
+		android:title="actionItem3"
+		ARC:showAsAction="ifRoom">
+	</item>
+	
+	<item
+		android:id="@+id/action_button4"
+		android:title="actionItem4"
+		ARC:showAsAction="ifRoom|collapseActionView"
+		ARC:actionViewClass="android.support.v7.widget.SearchView">
+	</item>
+	  
     <item
-        android:id="@+id/item"
+        android:id="@+id/menu_root"
         android:title="Item"
-		android:icon="@drawable/ic_launcher"
 		ARC:showAsAction="always">
 	
 		<item
-			android:id="@+id/test1"
-			android:title="test1">
+			android:id="@+id/menu_item1"
+			android:title="menu item 1">
+		</item>
+		
+		<item
+			android:id="@+id/menu_item2"
+			android:title="menu item 2">
+		</item>
+		
+		<item
+			android:id="@+id/menu_item3"
+			android:title="menu item 3">
 		</item>
 	</item>
     

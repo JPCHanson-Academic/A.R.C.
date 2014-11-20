@@ -9,12 +9,13 @@
         android:targetSdkVersion="18" />
 
     <application
-		android:theme="@style/Theme.AppCompat"
-        android:icon="@drawable/arc_logo" 
-        android:label="ARC" >
+		android:logo="@drawable/arc_logo" 
+		android:icon="@drawable/arc_logo"
+		android:label="ARC" 
+		android:theme="@style/ARCtionBar">
         <activity
-            android:label=""
-            android:name=".MainActivity" >
+            android:name=".MainActivity"			
+			android:label="arc">
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
 

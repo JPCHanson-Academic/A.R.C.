@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.support.v4.view.WindowCompat;
 
 public class MainActivity extends ActionBarActivity 
 {
@@ -13,9 +14,9 @@ public class MainActivity extends ActionBarActivity
     public void onCreate(Bundle savedInstanceState)
 	{
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+		//getWindow().requestFeature(WindowCompat.FEATURE_ACTION_BAR_OVERLAY);
+        setContentView(R.layout.main); 
     }
-
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
@@ -25,13 +26,29 @@ public class MainActivity extends ActionBarActivity
 		return super.onCreateOptionsMenu(menu);
 	}
 
-//BROKEN
-//	@Override
-//	public final boolean onMenuItemSelected(int featureId, MenuItem item)
-//	{
-//		// TODO: Implement this method
-//		return super.onMenuItemSelected(featureId, item);
-//	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		// Handle presses on the action bar items
+		switch (item.getItemId())
+		{
+			case R.id.menu_item1:
+				//do something
+				return true;
+				
+			case R.id.menu_item2:
+				//do something
+				return true;
+				
+			case R.id.menu_item3:
+				//do something
+				return true;
+				
+			default:
+				return super.onOptionsItemSelected(item);
+		}
+	}
 	
 
 }
