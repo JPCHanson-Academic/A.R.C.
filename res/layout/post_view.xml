@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical"
+	android:gravity="top">
+
+	<RelativeLayout
+		android:layout_height="60dp"
+		android:layout_width="match_parent"
+		android:id="@+id/postActionBar">
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/arc_logo"
+			android:id="@+id/arclogo"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Write Post"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_toRightOf="@id/arclogo"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="160dp"
+		android:orientation="vertical"
+		android:layout_below="@id/postActionBar"
+		android:id="@+id/accessModifiers">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Who can view this post?"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:ems="30"
+		android:layout_width="wrap_content"
+		android:layout_toRightOf="@id/accessModifiers"
+		android:layout_below="@id/postActionBar"
+		android:hint="Title"
+		android:id="@+id/titleArea"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:inputType="textMultiLine"
+		android:ems="30"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/titleArea"
+		android:layout_toRightOf="@id/accessModifiers"
+		android:hint="Subject"
+        android:id="@+id/subjectArea"/>
+
+	<ImageButton
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@android:drawable/ic_menu_upload"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/submitButton"
+		android:onClick="updatePostList"/>
+
+</RelativeLayout>
+

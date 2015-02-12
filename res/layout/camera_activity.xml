@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_height="match_parent"
-	android:layout_width="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/beyondarFragment"
+        android:name="com.beyondar.android.fragment.BeyondarFragmentSupport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
     <RelativeLayout
         android:layout_height="60dp"
@@ -42,10 +49,6 @@
 
     </RelativeLayout>
 
-    <fragment
-        android:name="com.orpheus.ARC.view.ListViewFragment"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
+</RelativeLayout>
 
-</LinearLayout>
 
