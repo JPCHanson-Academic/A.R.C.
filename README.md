@@ -1,4 +1,5 @@
 # ARC (augmented reality commucicator)
+(Branch:CurrentState holds current work)
 This is the ARC project, an augmented reality social networking app for android. It is part of my second year computer science coursework.
 
 ## Design
