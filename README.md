@@ -33,4 +33,4 @@ So going on my above premise below are my proposed responsibilities for the thre
 * plugin(s) (between manager and data model, adds auxilliry functionality)
 
 ### Data Model
-* its the bloody data retrieval interface.
+* its the datamodel
