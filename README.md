@@ -1,6 +1,9 @@
 # ARC (augmented reality commucicator)
 (Branch:CurrentState holds current work)
 
+To-Fix
+* COMMENTS, make them better,more complete,make sense.
+
 This is the ARC project, an augmented reality social networking app for android. It is part of my second year computer science coursework.
 
 ## Design
