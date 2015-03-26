@@ -14,6 +14,10 @@ import java.io.OutputStreamWriter;
 import java.io.OutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import android.util.Log;
 import android.os.Environment;
 import android.media.*;
@@ -66,8 +70,19 @@ public class TestWorld
          Calendar c = Calendar.getInstance(); 
          long id = System.currentTimeMillis()+SystemClock.uptimeMillis();
          int time = c.get( (int) c.getTimeInMillis() );
+         double locationID = 1d;
          
          postStack.push(new Post(id, "userName", title, content, lat, lng, time));   
+         
+         try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+              con=DriverManager.getConnection("jdbc:mysql://134.83.83.28:3306/app_data","l2grp","l2gp7");
+            st=con.prepareStatement("insert into Location values(locationID, lat, lng);
+                                    insert into Posts(postId,userId,timestamp,locationId,title,content)
+                                                        values ("+id+",1111,"+time+","+locationID+","+title+","+content)");
+        }
+        catch(Exception e){}
          
      }
      
